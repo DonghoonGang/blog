@@ -1,0 +1,49 @@
+---
+title: "distill 패키지 - R 기반 블로그"
+output: html_document
+---
+
+# 개요
+
+-   distill 패키지 소개
+-   블로그 포스팅 하기
+-   카테고리 링크 하기
+-   블로그 빌드 하기
+-   블로그 배포
+
+# distill package 소개
+
+```{r}
+install.packages("distill")
+library(distill)
+```
+
+# 블로그 만들기
+
+```{r}
+
+```
+
+# 블로그 포스팅 하기
+
+```{r}
+
+```
+
+# 카테고리 만들기
+
+```{r}
+
+```
+
+# 블로그 빌드
+
+```{r}
+
+```
+
+# github homepage 배포
+
+```{r}
+
+```

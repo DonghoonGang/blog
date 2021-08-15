@@ -1,0 +1,44 @@
+---
+title: "rstudio cloud - github.com 연동"
+output: html_document
+---
+
+# 개요
+
+1. github 설정
+2. rstudio cloud 설정
+3. rstudio cloud - github 연동
+
+# github 가입
+
+#### 회원가입
+
+#### 저장소(Repository) 생성
+
+#### PAT(Personal Access Token) 발급
+
+# rstudio cloud
+
+#### 회원가입
+ * google 계정으로 가입
+ * github 계정으로 가입
+
+### github - rstudio cloud 연동
+```{r}
+install.packages("gitcreds")
+gitcreds::gitcreds_set()
+```
+
+```{console}
+
+#위 코드를 실행. github 페이지에서 발급받은 PAT(Personal Access Token) 입력
+? Enter password or token: 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
+-> Adding new credentials...
+-> Removing credetials from cache...
+-> Done.
+```
+
+### git Pull - Push 테스트
+
+
+
