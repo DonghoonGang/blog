@@ -25,7 +25,7 @@ library(distill)
 ```{r}
 dir_   <- "Hoony"
 title_ <- "Hoony's Archieve"
-create_blog(dir = dir_, title = title_)
+create_blog(dir = dir_, title = title_, gh_pages = TRUE)
 
 ```
 

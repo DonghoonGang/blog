@@ -35,7 +35,7 @@ gitcreds::gitcreds_set()
 
 ```{console}
 #위 코드를 실행. github 페이지에서 발급받은 PAT(Personal Access Token) 입력
-? Enter password or token: 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
+? Enter password or token: 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
 -> Adding new credentials...
 -> Removing credetials from cache...
 -> Done.
