@@ -34,8 +34,11 @@ gitcreds::gitcreds_set()
 ```
 
 ```{console}
+git config --global user.name "DonghoonGang"
+git config --global user.email "clever3737@gmail.com"
+
 #위 코드를 실행. github 페이지에서 발급받은 PAT(Personal Access Token) 입력
-? Enter password or token: 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
+? Enter password or token: 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
 -> Adding new credentials...
 -> Removing credetials from cache...
 -> Done.
