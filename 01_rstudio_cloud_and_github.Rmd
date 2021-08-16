@@ -29,8 +29,11 @@ install.packages("gitcreds")
 gitcreds::gitcreds_set()
 ```
 
-```{console}
+```{r}
+# usethis::pr_push() 어떻게 쓰는지 알아보기
+```
 
+```{console}
 #위 코드를 실행. github 페이지에서 발급받은 PAT(Personal Access Token) 입력
 ? Enter password or token: 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
 -> Adding new credentials...
@@ -39,6 +42,8 @@ gitcreds::gitcreds_set()
 ```
 
 ### git Pull - Push 테스트
+
+
 
 
 

@@ -1,0 +1,12 @@
+name: "Hoony"
+title: "Hoony's Archieve"
+description: |
+  매일 글을 써라. 강렬하게 독서해라. 그리고 나서 무슨일이 일어나는지 한번 보자 - 레이 브래드버리
+output_dir: "_site"
+navbar:
+  right:
+    - text: "Home"
+      href: index.html
+    - text: "About"
+      href: about.html
+output: distill::distill_article

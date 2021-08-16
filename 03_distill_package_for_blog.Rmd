@@ -14,19 +14,58 @@ output: html_document
 # distill package 소개
 
 ```{r}
-install.packages("distill")
+if ( !require("distill") ) {
+  install.packages("distill")  
+}
 library(distill)
 ```
 
 # 블로그 만들기
 
 ```{r}
+dir_   <- "Hoony"
+title_ <- "Hoony's Archieve"
+create_blog(dir = dir_, title = title_)
 
 ```
+
+# 블로그 설정
+
+After you've created the blog scaffolding, there are a couple of additional configuration items you'll want to add to your `_site.yml` so that it's easier to share content on the blog via RSS and social networks like Twitter:
+
+-   A short `description` of the site. This field is used for the channel description of your RSS feed.
+
+-   A `base_url` for the site (the URL where it will be published to). This is used both for RSS feed items and for sharing posts via [Open Graph](https://rstudio.github.io/distill/metadata.html#open-graph) and [Twitter Card](https://rstudio.github.io/distill/metadata.html#twitter-card).
+
+For example:
+
+**\_site.yml**
+
+    name: "reproducible-finance-with-r"
+    title: "Reproducible Finance with R"
+    description: |
+      Exploring reproducible finance with the R statistical 
+      computing environment.
+    base_url: https://beta.rstudioconnect.com/content/11424/
+    navbar:
+      logo: images/rstudio.png
+      right:
+        - text: "Home"
+          href: index.html
+        - text: "About"
+          href: about.html
+        - text: "Contributors"
+          href: contributors.html
+        - icon: fa fa-rss
+          href: index.xml
+    output: distill::distill_article
+
+Note that we've also added a feed icon to the right side of the menu bar which makes it easy to discover and browse the RSS feed for the blog.
 
 # 블로그 포스팅 하기
 
 ```{r}
+
 
 ```
 
@@ -34,16 +73,19 @@ library(distill)
 
 ```{r}
 
+
 ```
 
 # 블로그 빌드
 
 ```{r}
 
+
 ```
 
 # github homepage 배포
 
 ```{r}
+
 
 ```
